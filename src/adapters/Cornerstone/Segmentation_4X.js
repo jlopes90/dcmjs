@@ -194,9 +194,7 @@ function fillSegmentation(segmentation, inputLabelmaps3D, userOptions = {}) {
         segmentation.bitPackPixelData();
     }
 
-    const segBlob = datasetToBlob(segmentation.dataset);
-
-    return segBlob;
+    return segmentation;
 }
 
 function _getLabelmapsFromRefernecedFrameIndicies(
